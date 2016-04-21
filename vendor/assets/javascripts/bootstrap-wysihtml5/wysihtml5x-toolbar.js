@@ -10156,7 +10156,7 @@ wysihtml5.Commands = Base.extend(
         });
       } else {
         // Create links
-        value = typeof(value) === "object" ? $.extent(value, { target: '_blank' }) : { href: value, target: '_blank' };
+        value = typeof(value) === "object" ? $.extend(value, { target: '_blank' }) : { href: value, target: '_blank' };
         _format(composer, value);
       }
     },
