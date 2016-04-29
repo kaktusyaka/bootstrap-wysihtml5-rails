@@ -2940,12 +2940,7 @@ var wysihtml5 = {
 
                     r1.setStart(textNode, 1);
                     r1.collapse(true);
-                    try {
-                      sel.addRange(r1);
-                    }
-                    catch(arr) {
-alert('s');
-                    }
+                    sel.addRange(r1);
                     collapsedNonEditableSelectionsSupported = (sel.rangeCount == 1);
                     sel.removeAllRanges();
 
