@@ -2943,7 +2943,7 @@ var wysihtml5 = {
                     try {
                       sel.addRange(r1);
                     }
-                    catch {
+                    catch(arr) {
 alert('s');
                     }
                     collapsedNonEditableSelectionsSupported = (sel.rangeCount == 1);
